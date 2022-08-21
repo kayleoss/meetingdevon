@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/RubikBurned-Regular.ttf")
+}
+
+@font-face {
+  font-family: "Rubik Distressed";
+  src: url("../assets/RubikDistressed-Regular.ttf")
+}
+
+$mobile: 600px;
+$tablet: 1024px;
+
+#app {
+    background: black;
+    min-height: 100vh;
+}
+.story-background {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media(max-width:$mobile) {
+        background-position: bottom;
+    }
+}
+h1 {
+  font-family: "Rubik";
+  font-size: 44pt;
+}
+p, .btn {
+  font-family: "Rubik Distressed";
+  font-size: 18pt;
+}
+small, .copyright {
+    font-family: "Rubik Distressed";
+    font-size: 14pt;
+}
+.wow {
+    visibility: hidden;
+}
+.no-style-button {
+    border:0;
+    background:transparent;
+    font-family: "Rubik Distressed";
+    font-size: 18pt;
+}
+.stick-bottom {
+    position:absolute;
+    bottom: 0;
+    @media (max-width: $mobile) {
+        position: relative;
+        margin: auto;
+    }
+}
+.bbg-dark {
+    background: black;
+}
+.text-rdanger, small {
+    color: red;
+}
+.text-underline {
+    text-decoration: underline;
+}
+.speech-box {
+    background:white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 15px 15px black;
+}
+.thought-box {
+    background:white;
+    padding: 25px;
+}
+.cnt-btn {
+    font-size: 14pt;
+}
+.absolute-right {
+    width: 50em;
+    z-index: 1;
+    position: absolute; 
+    top: 15em;
+    right: 0em;
+}
+.lg-mt {
+    @media (min-width: 1025px) {
+        margin-top:15vh;
+    }
+}
