@@ -12,7 +12,7 @@ export default {
     classes: String
   },
   mounted() {
-    var timeout = 3000;
+    let timeout = 3000;
     if(!this.text){
       timeout = 5000;
     }
