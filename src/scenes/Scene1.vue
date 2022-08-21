@@ -1,4 +1,8 @@
 <template>
+    <div v-if="showRef == -1">
+        <p class="wow fadeIn text-center pt-5">Loading...</p>
+    </div>
+
     <div v-if="showRef == 0">
         <div class="container pt-5">
             <div class="container">
@@ -112,7 +116,7 @@ export default {
   data() {
     return {
         windowWidth: window.innerWidth,
-        showRef: 0,
+        showRef: -1,
         part1Text: data.Prologue,
         part2Text: data.Part2,
         part3Text: data.Part3,
@@ -161,6 +165,9 @@ export default {
   },
   mounted() {
     window.addEventListener('resize', this.onResize);
+    setTimeout(() => {
+        this.showRef += 1
+    }, 5000);
   }
 }
 </script>
