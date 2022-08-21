@@ -6,7 +6,7 @@
     <div v-if="showRef == 0">
         <div class="container pt-5">
             <div class="container">
-                <h1 class="text-center wow fadeIn" data-wow-delay="1s">Vol 1:<br>Meeting Devon</h1>
+                <h1 class="text-center wow fadeIn">Vol 1:<br>Meeting Devon</h1>
                 <p v-if="windowWidth < 1024" class="wow fadeIn text-center">
                     This visual novel is best experienced on tablets (in landscape mode), laptops, and computers.
                     Your screen is too small to experience this visual novel.
