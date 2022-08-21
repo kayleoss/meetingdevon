@@ -12,6 +12,7 @@
         images: [
           'aftershow.jpg',
           'aftershow2.jpg',
+          'aftershow3.jpg',
           'bed1.png',
           'burlesque.png',
           'devon1.png',
