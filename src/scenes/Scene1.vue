@@ -160,7 +160,10 @@ export default {
     },
 
     onResize() {
-        location.reload()
+        this.windowWidth = window.innerWidth;
+        if (this.windowWidth < 1024) {
+            this.showRef = 0;
+        }
     }
   },
   mounted() {
