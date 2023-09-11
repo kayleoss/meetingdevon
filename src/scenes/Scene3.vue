@@ -15,13 +15,16 @@
         <Frame
             conClasses="pt-lg-5"
             rowClasses="pt-5"
-            colClasses="col-md-6 col-lg-4 lg-mt"
+            colClasses="col-md-6 col-lg-4"
             textClasses="wow fadeIn"
             :textData="part2Text"
         />
-        <div class="container mt-3 p-3 wow fadeIn" data-wow-delay="2s">
-            <button type="button" class="btn btn-success border-0" @click="transitionPart('next')">Go</button> 
-            <button type="button" class="btn btn-danger border-0" @click="transitionPart('next')">Don't go</button>
+        <div class="container dialogue-container p-3 mt-5 wow fadeIn border-5" data-wow-delay="2s">
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart('next')">1. Prepare to go the burlesque show tonight.</button><br>
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart(16)">2. Skip the show tonight and go next week instead.</button><br>
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart(16)">3. Run errands instead. Your floors need to be vaccuumed.</button><br>
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart(16)">4. Relax in the park for the rest of the day and evening.</button><br>
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart(16)">5. Do literally anything else instead of going to the show.</button>
         </div>
     </div>
 
@@ -90,7 +93,7 @@
     </div>
 
     <div v-if="showRef == 9" class="story-background">
-        <TransitionFrame text="...And that's how I met Devon." classes="wow fadeIn pt-5 text-center" @finished="transitionPart" />
+        <TransitionFrame text="You're drawn in by a beautiful mysterious woman who instantly pulls you out of the crowd." classes="wow fadeIn pt-5 text-center" @finished="transitionPart" />
     </div>
 
     <div v-if="showRef == 10" class="story-background m-0 p-0" :style="{backgroundImage: `url(${require('../assets/devon2.png')})`, backgroundPosition: 'top'}">
@@ -102,7 +105,7 @@
     </div>
 
     <div v-if="showRef == 12" class="story-background">
-        <TransitionFrame text="Two Leos Collide" classes="wow fadeIn pt-5 text-center" @finished="transitionPart" />
+        <TransitionFrame text="You realize there's a world out there worth exploring and how much of it you were missing." classes="wow fadeIn pt-5 text-center" @finished="transitionPart" />
     </div>
 
     <div v-if="showRef == 13" class="story-background m-0 p-0" :style="{backgroundImage: `url(${require('../assets/together2.png')})`, backgroundPosition: 'top left'}">
@@ -111,6 +114,14 @@
 
     <div v-if="showRef == 14" class="story-background m-0 p-0" :style="{backgroundImage: `url(${require('../assets/together3.png')})`, backgroundPosition: 'center bottom'}">
         <TransitionFrame classes="wow fadeIn m-0 p-0" @finished="transitionPart" />
+    </div>
+
+    <div v-if="showRef == 16" class="story-background m-0 p-0" :style="{background: `black`}">
+        <div class="wow fadeIn container text-light pt-5">
+            <h1 class="text-center text-rdanger">Game Over</h1>
+            <p> You feel as though you might've missed something important, something that might have changed your sorry life. However, it's too late to go back and change your past actions. You spend the rest of your days slaving away at work.</p>
+            <a href="/" class="text-rdanger no-style-button text-underline"> >>> Main Menu</a>
+        </div>
     </div>
 
 </template>
@@ -151,6 +162,8 @@ export default {
             this.showRef += 1
         } else if (dir == "prev") {
             this.showRef -= 1
+        } else {
+            this.showRef = dir
         }
 
         switch (this.showRef) {

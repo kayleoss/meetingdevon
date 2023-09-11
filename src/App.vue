@@ -1,7 +1,7 @@
 <template>
   <router-view/>
-  <div v-for="img in images" :key="images.indexOf(img)" class="d-none">
-    <img :src="require(`./assets/${img}`)" rel="preload" />
+  <div class="d-none">
+    <img v-for="img in images" :key="images.indexOf(img)" :src="require(`./assets/${img}`)" rel="preload" />
   </div>
 </template>
 <script>

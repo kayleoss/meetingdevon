@@ -6,7 +6,8 @@
     <div v-if="showRef == 0">
         <div class="container pt-5">
             <div class="container">
-                <h1 class="text-center wow fadeIn">Vol 1:<br>Meeting Devon</h1>
+                <h1 class="text-center wow fadeIn">Meeting Devon</h1>
+                <p class="text-center wow fadeIn">An interactive visual novel game.</p>
                 <p v-if="windowWidth < 1024" class="wow fadeIn text-center">
                     This visual novel is best experienced on tablets (in landscape mode), laptops, and computers.
                     Your screen is too small to experience this visual novel.
@@ -102,7 +103,7 @@
     </div>
 
     <div v-if="showRef == 7" class="bbg-dark story-background wow fadeIn">
-        <TransitionFrame text="2 days later..." classes="pt-5 text-center" @finished="transitionPart" />
+        <TransitionFrame text="Time flies by.. You wake up and it's Friday evening." classes="pt-5 text-center" @finished="transitionPart" />
     </div>
 </template>
 <script>

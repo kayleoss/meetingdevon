@@ -6,9 +6,15 @@
             colClasses="col-md-6 col-lg-4 pt-lg-5"
             textClasses="wow fadeIn"
             :textData="part1Text"
-            showNext
             @transition="transitionPart"
         />
+        <div class="container dialogue-container p-3 mt-5 wow fadeIn border-5" data-wow-delay="1s">
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart(15)">1. I still have some work to do.</button><br>
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart('next')">2. Want to go see a burlesque show?</button><br>
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart(15)">3. Be a potato on the couch.</button><br>
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart(15)">4. Browse social media.</button><br>
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart(16)">5. Read the bible.</button>
+        </div>
     </div>
 
     <div v-if="showRef == 1" class="story-background" :style="{backgroundImage: `url(${require('../assets/marla.png')})`}">
@@ -19,7 +25,6 @@
             textClasses="wow fadeIn"
             :textData="part2Text"
             showNext
-            showBack
             @transition="transitionPart"
         />
     </div>
@@ -101,10 +106,13 @@
             colClasses="col-md-6 col-lg-4 pt-5 lg-mt"
             textClasses="wow fadeIn"
             :textData="part8Text"
-            showNext
-            showBack
             @transition="transitionPart"
         />
+        <div class="container dialogue-container p-3 mt-5 wow fadeIn border-5" data-wow-delay="1s">
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart(17)">1. No. Tell the performers to put a shirt on.</button><br>
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart(18)">2. This event is not appropriate for kids!! STOP BEING A GROOMER!</button><br>
+            <button type="button" class="dialogue-btn border-0" @click="transitionPart('next')">3. YES! BURLESQUE IS AWESOME!</button><br>
+        </div>
     </div>
 
     <div v-if="showRef == 9" class="story-background pt-5" :style="{backgroundImage: `url(${require('../assets/aftershow.jpg')})`}">
@@ -160,7 +168,40 @@
     </div>
 
     <div v-if="showRef == 13" class="bbg-dark story-background wow fadeIn">
-        <TransitionFrame text="Two weeks later<br>August 6th, 2:18PM" classes="pt-5 text-center" @finished="transitionPart" />
+        <TransitionFrame text="Two weeks later" classes="pt-5 text-center" @finished="transitionPart" />
+    </div>
+
+    <div v-if="showRef == 15" class="story-background m-0 p-0" :style="{background: `black`}">
+        <div class="wow fadeIn container text-light pt-5" data-wow-delay="1s">
+            <h1 class="text-center text-rdanger">Game Over</h1>
+            <p>As you head to bed for the evening, you feel as though you might've missed something important, something that might have changed your sorry life. However, it's too late to go back and change your past actions. You spend the rest of your days slaving away at work.</p>
+            <a href="/" class="text-rdanger no-style-button text-underline"> >>> Main Menu</a>
+        </div>
+    </div>
+
+    <div v-if="showRef == 16" class="story-background m-0 p-0" :style="{background: `black`}">
+        <div class="wow fadeIn container text-light pt-5" data-wow-delay="1s">
+            <h1 class="text-center text-rdanger">Game Over</h1>
+            <p>Poisonous beliefs slowly take root inside of your mind and convince you that your place in this world is to be subservient. You end up quitting your job and marrying a man you aren't particularly attracted to. 
+            8 years later, you are burdened with 3 kids that you didn't particularly want, and spend your days cooking and cleaning for your family. While you look down at a mountain of dirty dishes, you can't help but wonder if you could have had a better life.</p>
+            <a href="/" class="text-rdanger no-style-button text-underline"> >>> Main Menu</a>
+        </div>
+    </div>
+
+    <div v-if="showRef == 17" class="story-background m-0 p-0" :style="{background: `black`}">
+        <div class="wow fadeIn container text-light pt-5" data-wow-delay="1s">
+            <h1 class="text-center text-rdanger">Game Over</h1>
+            <p>"Um- who died and made you the dictator of clothing? Get your salty ass out of here!"<br><br> You've been banned from the establishment and probably all the other ones in the city too. It feels like you probably shouldn't have said that. You spend the rest of your days slaving away at work.</p>
+            <a href="/" class="text-rdanger no-style-button text-underline"> >>> Main Menu</a>
+        </div>
+    </div>
+
+    <div v-if="showRef == 18" class="story-background m-0 p-0" :style="{background: `black`}">
+        <div class="wow fadeIn container text-light pt-5" data-wow-delay="1s">
+            <h1 class="text-center text-rdanger">Game Over</h1>
+            <p>"Bitch do you see any kids here?? It's an adult only club! Kids are not welcome, and now neither are YOU! Get your salty ass out of here!"<br><br> You've been banned from the establishment and probably all the other ones in the city too. You definitely shouldn't have said that. You spend the rest of your days slaving away at work.</p>
+            <a href="/" class="text-rdanger no-style-button text-underline"> >>> Main Menu</a>
+        </div>
     </div>
 
 </template>
@@ -201,6 +242,8 @@ export default {
             this.showRef += 1
         } else if (dir == "prev") {
             this.showRef -= 1
+        } else {
+            this.showRef = dir
         }
 
         switch (this.showRef) {
