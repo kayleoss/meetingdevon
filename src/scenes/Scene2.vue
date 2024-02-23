@@ -13,7 +13,6 @@
             <button type="button" class="dialogue-btn border-0" @click="transitionPart('next')">2. Want to go see a burlesque show?</button><br>
             <button type="button" class="dialogue-btn border-0" @click="transitionPart(15)">3. Be a potato on the couch.</button><br>
             <button type="button" class="dialogue-btn border-0" @click="transitionPart(15)">4. Browse social media.</button><br>
-            <button type="button" class="dialogue-btn border-0" @click="transitionPart(16)">5. Read the bible.</button>
         </div>
     </div>
 

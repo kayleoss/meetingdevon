@@ -16,7 +16,7 @@
                     <button v-if="windowWidth >= 1024" type="button" class="wow fadeInLeft text-rdanger no-style-button text-underline" data-wow-duration="3s" data-wow-delay="1s" @click="transitionPart('next')">Start reading <i class="fa-solid fa-angles-right"></i></button>
                 </div>
                 <div class="row m-0 p-0 wow fadeIn" data-wow-duration="3s" data-wow-delay="1s">
-                    <img :src="require('../assets/covercensored.png')" alt="" />
+                    <img :src="require('../assets/walking.png')" alt="" class="mt-5" />
                     <div class="col-sm-12 text-end">
                         <small class="text-rdanger">By <a href='http://katieliu.ca' target='_blank' class="text-rdanger">Katie</a><br>All rights reserved &copy; 2022</small>
                     </div>
