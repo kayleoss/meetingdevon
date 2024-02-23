@@ -1,8 +1,8 @@
 export default {
-    "Prologue": "Monday... Work.",
-    "Part2": "Tuesday... Work.",
-    "Part3": "Wednesday... Work.",
-    "Part4": "Thursday... Work.",
-    "Part5": "Work. Work. Work. Work.",
-    "Part6": "Wor.."
+    "Prologue": "I'm....",
+    "Part2": "So.....",
+    "Part3": "Tired....",
+    "Part4": "Of.....",
+    "Part5": "Everything......",
+    "Part6": "Everything."
 }

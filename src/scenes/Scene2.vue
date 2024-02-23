@@ -173,7 +173,7 @@
     <div v-if="showRef == 15" class="story-background m-0 p-0" :style="{background: `black`}">
         <div class="wow fadeIn container text-light pt-5" data-wow-delay="1s">
             <h1 class="text-center text-rdanger">Game Over</h1>
-            <p>As you head to bed for the evening, you feel as though you might've missed something important, something that might have changed your sorry life. However, it's too late to go back and change your past actions. You spend the rest of your days slaving away at work.</p>
+            <p>As you head to bed for the evening, you feel as though you might've missed something important, something that might have changed your sorry life. However, it's too late to go back and change your past actions. You spend the rest of your days moping around.</p>
             <a href="/" class="text-rdanger no-style-button text-underline"> >>> Main Menu</a>
         </div>
     </div>
