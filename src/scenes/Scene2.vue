@@ -173,7 +173,7 @@
     <div v-if="showRef == 15" class="story-background m-0 p-0" :style="{background: `black`}">
         <div class="wow fadeIn container text-light pt-5" data-wow-delay="1s">
             <h1 class="text-center text-rdanger">Game Over</h1>
-            <p>As you head to bed for the evening, you feel as though you might've missed something important, something that might have changed your sorry life. However, it's too late to go back and change your past actions. You spend the rest of your days moping around.</p>
+            <p>As you head to bed for the evening, you feel as though you might've missed something important, something that might have changed your sorry life. However, it's too late to go back and change your past actions. You spend the rest of your life moping around.</p>
             <a href="/" class="text-rdanger no-style-button text-underline"> >>> Main Menu</a>
         </div>
     </div>
@@ -190,7 +190,7 @@
     <div v-if="showRef == 17" class="story-background m-0 p-0" :style="{background: `black`}">
         <div class="wow fadeIn container text-light pt-5" data-wow-delay="1s">
             <h1 class="text-center text-rdanger">Game Over</h1>
-            <p>"Um- who died and made you the dictator of clothing? Get your salty ass out of here!"<br><br> You've been banned from the establishment and probably all the other ones in the city too. It feels like you probably shouldn't have said that. You spend the rest of your days slaving away at work.</p>
+            <p>"Um- who died and made you the dictator of clothing? Get your salty ass out of here!"<br><br> You've been banned from the establishment and probably all the other ones in the city too. It feels like you probably shouldn't have said that. You spend the rest of your days moping around.</p>
             <a href="/" class="text-rdanger no-style-button text-underline"> >>> Main Menu</a>
         </div>
     </div>
@@ -198,7 +198,7 @@
     <div v-if="showRef == 18" class="story-background m-0 p-0" :style="{background: `black`}">
         <div class="wow fadeIn container text-light pt-5" data-wow-delay="1s">
             <h1 class="text-center text-rdanger">Game Over</h1>
-            <p>"Bitch do you see any kids here?? It's an adult only club! Kids are not welcome, and now neither are YOU! Get your salty ass out of here!"<br><br> You've been banned from the establishment and probably all the other ones in the city too. You definitely shouldn't have said that. You spend the rest of your days slaving away at work.</p>
+            <p>"Do you see any kids here?? It's an adult only club! Kids are not welcome, and now neither are YOU! Get your salty ass out of here!"<br><br> You've been banned from the establishment and probably all the other ones in the city too. You definitely shouldn't have said that. You spend the rest of your days moping around.</p>
             <a href="/" class="text-rdanger no-style-button text-underline"> >>> Main Menu</a>
         </div>
     </div>

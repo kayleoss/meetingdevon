@@ -7,13 +7,13 @@
         <div class="container pt-5">
             <div class="container">
                 <h1 class="text-center wow fadeIn">Meeting Devon</h1>
-                <p class="text-center wow fadeIn">An interactive visual novel game.</p>
+                <p class="text-center wow fadeIn">Your name is Jane. You need to meet Devon. Good luck</p>
                 <p v-if="windowWidth < 1024" class="wow fadeIn text-center">
                     This visual novel is best experienced on tablets (in landscape mode), laptops, and computers.
                     Your screen is too small to experience this visual novel.
                 </p>
                 <div class="text-center">
-                    <button v-if="windowWidth >= 1024" type="button" class="wow fadeInLeft text-rdanger no-style-button text-underline" data-wow-duration="3s" data-wow-delay="1s" @click="transitionPart('next')">Start reading <i class="fa-solid fa-angles-right"></i></button>
+                    <button v-if="windowWidth >= 1024" type="button" class="wow fadeInLeft text-rdanger no-style-button text-underline" data-wow-duration="3s" data-wow-delay="1s" @click="transitionPart('next')">Start Game <i class="fa-solid fa-angles-right"></i></button>
                 </div>
                 <div class="row m-0 p-0 wow fadeIn" data-wow-duration="3s" data-wow-delay="1s">
                     <img :src="require('../assets/walking.png')" alt="" class="mt-5" />

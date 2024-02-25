@@ -3,7 +3,7 @@ export default {
     "Part2": '"Burlesque you say?! HELL YEAH! GIRL! That is quite possibly the best idea you ever had!"',
     "Part3": `"I don't know where the idea came from but honestly, I just needed something different."`,
     "Part4": `"I agree, you've been holed up in that office from sunrise to sunset. You need to get out there girl!"`,
-    "Part5": `"Let's go before I change my mind."`,
+    "Part5": `"I hear ya. We better get goin then!"`,
     "Part6": '"I gotta say, this is going better than I expected."',
     "Part7": '"Hell yeah!"',
     "Part8": '"Thanks for coming! Did you enjoy the show?"',

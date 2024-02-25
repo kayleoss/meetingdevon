@@ -4,23 +4,12 @@
             <div class="container text-center text-white">
                 <h1 class="wow fadeIn pt-5">To be continued...</h1>
                 <div class="row pt-5 wow fadeIn" data-wow-delay=".5s">
-                    <div class="col-sm-12 col-md-6"><p>Development</p></div>
-                    <div class="col-sm-12 col-md-6"><p>Katie Liu</p></div>
-
-                    <div class="col-sm-12 col-md-6"><p>Story</p></div>
-                    <div class="col-sm-12 col-md-6"><p>Katie Liu</p></div>
-
-                    <div class="col-sm-12 col-md-6"><p>Art &amp; Illustration</p></div>
-                    <div class="col-sm-12 col-md-6"><p>Katie Liu</p></div>
-
-                    <div class="col-sm-12 col-md-6"><p>Animation</p></div>
-                    <div class="col-sm-12 col-md-6"><p>Katie Liu</p></div>
-
-                    <div class="col-sm-12 col-md-6"><p>Soundtrack</p></div>
-                    <div class="col-sm-12 col-md-6"><p>Katie Liu</p></div>
-
-                    <div class="col-sm-12 col-md-6"><p>Voiceover</p></div>
-                    <div class="col-sm-12 col-md-6"><p>Katie Liu</p></div>
+                    <div class="col-sm-12"><p><em>Development, Story, Art &amp; Illustration, Animation, and Soundtrack </em></p></div>
+                    <div class="col-sm-12"><p>by Katie Liu</p></div>
+                    
+                    <div class="mt-5">
+                        <a href="/" class="text-rdanger no-style-button text-underline"> >>> Main Menu</a>
+                    </div>
                 </div>
                 
             </div>
