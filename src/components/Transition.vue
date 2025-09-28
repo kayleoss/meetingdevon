@@ -9,12 +9,16 @@ export default {
   name: 'TransitionFrame',
   props: {
     text: String,
+    time: Boolean,
     classes: String
   },
   mounted() {
-    let timeout = 3000;
+    let timeout = 6000;
     if(!this.text){
       timeout = 5000;
+    }
+    if (this.time) {
+      timeout = 10000;
     }
     setTimeout(() => {
         this.$emit('finished', 'next')

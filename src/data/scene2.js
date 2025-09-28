@@ -1,15 +1,11 @@
 export default {
-    "Part1": '"GIRL! HAPPY FRIDAY! What are we doing tonight?"',
-    "Part2": '"Burlesque you say?! HELL YEAH! GIRL! That is quite possibly the best idea you ever had!"',
-    "Part3": `"I don't know where the idea came from but honestly, I just needed something different."`,
-    "Part4": `"I agree, you've been holed up in that office from sunrise to sunset. You need to get out there girl!"`,
-    "Part5": `"I hear ya. We better get goin then!"`,
-    "Part6": '"I gotta say, this is going better than I expected."',
-    "Part7": '"Hell yeah!"',
-    "Part8": '"Thanks for coming! Did you enjoy the show?"',
-
-    "Part9": '"YES! BURLESQUE IS AWESOME!"',
-    "Part10": `"We have a new performer, Devon, headlining here soon with an amazing show planned. Come check it out!"`,
-    "Part11": "Work is crazy busy this month, I don't know if I'll be able to make it.",
-    "Part12": `"I guess we'll see!"`,
+    "Part1": 'So I did. I cried for hours. My tears flowed down my body through the darkness below.',
+    "Part2": '"Little birdie in despair."',
+    "Part3": `She handed me something. Upon closer inspection, I've seen it before. What was the name of this thing again?`,
+    "Part4": `"Let's see what you do with it. If it pleases me, I just might let you return."`,
+    "Part5": `Mind you, up until then I had never drawn anything in my life. But I held the brush firm and started practicing. If what she said was true, and I could leave this hole of black nothingness, I had to try.`,
+    "Part6": 'I started with basic shapes. Circles, squares, triangles. Then I moved on to more complex figures. What felt like 500 hours later, I was finally able to paint.',
+    "Part7": `And yet, I wasn't. I didn't know what to paint. To please this weird but kind of cute lady in order to be let out? Zero ideas.`,
+    "Part8": '"You know what you have to do."',
+    "Part20": '"..."'
 }
